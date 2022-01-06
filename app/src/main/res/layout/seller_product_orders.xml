@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="6dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/raleway_bold"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID:"
+                    android:layout_marginRight="5dp"
+               />
+
+                <TextView
+                    android:fontFamily="@font/raleway_bold"
+                    android:textSize="20sp"
+                    android:id="@+id/product_title_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/product_price_cart"
+
+                android:fontFamily="@font/raleway"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs: 120"
+                android:textColor="@color/design_default_color_error" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/addres"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Customer Address: "-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                >-->
+<!--            </TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/caddress"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Address"-->
+<!--                ></TextView>-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rc_products"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Deliver"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cancel"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="@color/design_default_color_error"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-measurement-base:20.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-20.0.1.aar/b527a29973a04f4d5f89513bce6cde8d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-20.0.1.aar/b527a29973a04f4d5f89513bce6cde8d/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-20.0.1.aar/b527a29973a04f4d5f89513bce6cde8d/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-20.0.1.aar/4ae9f6ed0b0ccd91ef830cd7ac865ab8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-20.0.1.aar/4ae9f6ed0b0ccd91ef830cd7ac865ab8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-20.0.1.aar/4ae9f6ed0b0ccd91ef830cd7ac865ab8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

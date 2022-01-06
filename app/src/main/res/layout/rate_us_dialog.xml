@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="22dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/hor_guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.29" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/hor_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.46" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingEnd="-200dp"
+                android:paddingRight="-200dp"
+                android:src="@drawable/diagonal_shape"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/hor_guideline" />
+
+            <TextView
+                android:id="@+id/TitleRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="Thank you for using Bookyard"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/hor_guideline2"
+                app:layout_constraintVertical_bias="0.646"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/rateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Continue"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TitleRate"
+                app:layout_constraintVertical_bias="0.23"
+                fancy:fb_defaultColor="#59BA29"
+                fancy:fb_focusColor="#C4C4C4"
+                fancy:fb_radius="300dp"
+                fancy:fb_textColor="#fff"
+                fancy:fb_textFontRes="@font/montserrat_bold" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- title banner -->
+        <RelativeLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:id="@+id/titledialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat_bold"
+                android:padding="15dp"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:text="Bookyard"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/close_rate_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_close"
+                app:tint="@color/design_default_color_on_secondary" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout01"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ll2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/ic_cart2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlGet"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".products.ProductsListActivity">
+
+
+    // Back Button Layout
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_button_product"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+
+        <ImageView
+            android:id="@+id/eproduct"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="250dp"
+            android:src="@drawable/ic_edit" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/ll6">
+
+        <com.smarteist.autoimageslider.SliderLayout
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="false"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/ic_add_product" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_holder"
+        android:layout_margin="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/description_produit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title_item"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/raleway_regular"
+                    android:text="Book Name"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/buy_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="#FF6CBEFF"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/cart" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fav_now"
+                    android:layout_width="41dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="85dp"
+                    android:backgroundTint="#FF6CBEFF"
+                    android:src="@drawable/ic_fav"
+                    app:fabCustomSize="40dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/price_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/raleway_regular"
+                android:text="Rs: 120"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/description_item"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/description_product"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            android:foreground="?attr/selectableItemBackground"
+
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@android:color/background_dark"
+            app:itemTextColor="@android:color/background_dark"
+            app:menu="@menu/bottom_navigation" />
+    </FrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main">
+        <include layout="@layout/contain_main_sheet" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

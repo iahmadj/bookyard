@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.test.espresso:espresso-core:3.1.0-alpha3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.1.0-alpha3.aar/0e15cf82ba3ad69ed3b5b0d9ea6a5fe8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.1.0-alpha3.aar/0e15cf82ba3ad69ed3b5b0d9ea6a5fe8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.1.0-alpha3.aar/0e15cf82ba3ad69ed3b5b0d9ea6a5fe8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.1.0-alpha3.aar/b6d9b2d20167b1efb58361b25e7c9440/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.1.0-alpha3.aar/b6d9b2d20167b1efb58361b25e7c9440/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.1.0-alpha3.aar/b6d9b2d20167b1efb58361b25e7c9440/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

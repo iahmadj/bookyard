@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.circularreveal.CircularRevealGridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        grid:alignmentMode="alignBounds"
+        grid:columnCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            grid:layout_columnWeight="1"
+            grid:layout_gravity="fill"
+            grid:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mask" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/raleway_bold"
+                    android:maxLines="1"
+                    android:text="Book 1"
+                    android:textSize="20sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            grid:layout_columnWeight="1"
+            grid:layout_gravity="fill"
+            grid:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mask" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/raleway_bold"
+                    android:maxLines="1"
+                    android:text="Book 2"
+                    android:textSize="20sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            grid:layout_columnWeight="1"
+            grid:layout_gravity="fill"
+            grid:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mask" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/raleway_bold"
+                    android:maxLines="1"
+                    android:text="Book 3"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            grid:layout_columnWeight="1"
+            grid:layout_gravity="fill"
+            grid:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mask" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/raleway_bold"
+                    android:maxLines="1"
+                    android:text="Book 4"
+                    android:textSize="20sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+    </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorAccent">
+
+
+        <ImageView
+            android:id="@+id/image_single_view"
+            android:layout_width="107dp"
+            android:layout_height="94dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_add_product" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_single_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Book Name"
+                android:textColor="@color/headings"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price_single_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/raleway_regular"
+                android:gravity="center"
+                android:text="Rs: 11.99"
+                android:textColor="@color/followers"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID" />
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:id="@+id/product_title_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <TextView
+                android:id="@+id/product_price_cart"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Rs: 120"
+                android:textColor="@color/design_default_color_error"
+                android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

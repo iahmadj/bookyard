@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/drawable/ic_fav.xml" value="0.22552083333333334" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/drawable/ic_simple_heart.xml" value="0.22552083333333334" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_cart.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_categories.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_fav.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_search.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/menu/bottom_navigation_home.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable-v24/circle_border.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/big_cercle.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/cart.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_acart.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_add.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_edit.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_fav.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_profil.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_search.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_startup.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/ic_store.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/input_search.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_add_product.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_cart.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_categories.xml" value="0.21" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_edit_product.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_edit_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_fav.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_product_page.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_products_list.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_search.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_seller_home.xml" value="0.22" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_sellersorders.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/activity_users_orders.xml" value="0.15" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/app_bar_seller_home.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/cat_cardview.xml" value="0.5" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/contain_main_sheet.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/content_seller_home.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/fragement_inprocess.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/fragement_shipped.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/fragment_annuler.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/leaderboard_seller.xml" value="0.21" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/login.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/nav_header_seller_home.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/product_card_list.xml" value="0.33" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/product_card_list_cart.xml" value="0.22" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/product_card_orders.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/product_card_usersorders.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/product_vendor_list.xml" value="0.33" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/produit_card.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/produit_userorders.xml" value="0.33" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/rate_us_dialog.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/register.xml" value="0.22" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/seller_product_orders.xml" value="0.33" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/single_view.xml" value="0.33" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/spinner_item.xml" value="0.22" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/layout/toolbar.xml" value="0.16847826086956522" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/menu/activity_seller_home_drawer.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/menu/bottom_navigation.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/menu/bottom_navigation_home.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/menu/menu_main.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/menu/seller_home.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/drawable-v24/grad.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/drawable/cercle3.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/drawable/ic_add.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_add_product.xml" value="0.22" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_cart.xml" value="0.33" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_categories.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_product_page.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_products_list.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_profile.xml" value="0.18" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_seller_home.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_sellersorders.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/activity_users_orders.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/app_bar_seller_home.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/cat_cardview.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/contain_main_sheet.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/content_seller_home.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/fragement_inprocess.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/fragement_inshipped.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/fragement_shipped.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/fragment_annuler.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/fragment_in_shipped_seller.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/fragment_inprocess__seller.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/leaderboard_seller.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/nav_header_seller_home.xml" value="0.33" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/product_card_list.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/product_card_list_cart.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/product_card_orders.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/product_card_usersorders.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/produit_card.xml" value="0.5" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/produit_userorders.xml" value="0.25" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/rate_us_dialog.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/register.xml" value="0.18" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/seller_product_orders.xml" value="0.5" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/spinner_item.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/layout/toolbar.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/activity_seller_home_drawer.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/bottom_navigation.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/bottom_navigation_home.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/menu_main.xml" value="0.209375" />
+        <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/seller_home.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

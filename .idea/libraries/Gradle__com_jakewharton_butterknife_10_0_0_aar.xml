@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jakewharton:butterknife:10.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-10.0.0.aar/e8d9cc814714afa21d393001d9e6b38b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-10.0.0.aar/e8d9cc814714afa21d393001d9e6b38b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-10.0.0.aar/e8d9cc814714afa21d393001d9e6b38b/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-10.0.0.aar/ad62db8d70b8993304b7fae13943e433/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-10.0.0.aar/ad62db8d70b8993304b7fae13943e433/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/butterknife-10.0.0.aar/ad62db8d70b8993304b7fae13943e433/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-auth-interop:20.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-20.0.0.aar/596099d25d70a839766a830bcf27302a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-20.0.0.aar/596099d25d70a839766a830bcf27302a/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-20.0.0.aar/596099d25d70a839766a830bcf27302a/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-20.0.0.aar/bcf284dfc7e0efc8f470501e8d805bb7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-20.0.0.aar/bcf284dfc7e0efc8f470501e8d805bb7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-interop-20.0.0.aar/bcf284dfc7e0efc8f470501e8d805bb7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

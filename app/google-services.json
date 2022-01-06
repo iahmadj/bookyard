@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "573914180852",
+    "project_id": "book-app-d6284",
+    "storage_bucket": "book-app-d6284.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573914180852:android:a355b6bde7161b069302a1",
+        "android_client_info": {
+          "package_name": "com.classroom.app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573914180852-i21jblcse47c27btqe6hb84eo95ko8j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABTOhqhmNdzbeqLIdCfSbFrGYVUnVeTpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573914180852-i21jblcse47c27btqe6hb84eo95ko8j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-auth-base-license:11.4.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/645386f1008a0cb5c254a31ae3ec14bc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/645386f1008a0cb5c254a31ae3ec14bc/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/645386f1008a0cb5c254a31ae3ec14bc/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/4a58833d595dc70d92a779f8acd20aad/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/4a58833d595dc70d92a779f8acd20aad/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.4.2.aar/4a58833d595dc70d92a779f8acd20aad/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

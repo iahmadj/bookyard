@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents" />
+
+    <style name="AppTheme.jadid" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+<!--     BODY 1 -->
+    <style name="body1_black" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/design_default_color_on_secondary</item>
+
+    </style>
+
+    <style name="body1_white" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/design_default_color_on_primary</item>
+    </style>
+
+    <style name="body1_ERROR" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/design_default_color_error</item>
+    </style>
+
+
+
+<!--    Body 2  -->
+    <style name="body2_black" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/design_default_color_on_secondary</item>
+    </style>
+
+    <style name="body2_white" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/design_default_color_on_primary</item>
+    </style>
+
+    <style name="body2_ERROR" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/design_default_color_error</item>
+    </style>
+
+    <style name="heading1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="heading2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:fontFamily">@font/raleway</item>
+    </style>
+
+    <style name="heading3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:fontFamily">@font/raleway</item>
+
+    </style>
+
+    <style name="heading4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="heading5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="heading6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+</resources>

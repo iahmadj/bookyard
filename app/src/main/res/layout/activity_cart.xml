@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".cart.CartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_button_cart"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/raleway_regular"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:text="Cart"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="34sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_rc"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="623dp"
+        android:layout_above="@id/total_price"
+        android:layout_below="@+id/headerTitle" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons_checkout"
+        android:background="@color/white"
+        android:gravity="end"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="TOTAL BILL"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttons_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_all"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1.85"
+            android:outlineAmbientShadowColor="@color/design_default_color_error"
+            android:outlineSpotShadowColor="@color/design_default_color_error"
+            android:text="Delete All"
+            android:textColor="@color/design_default_color_error" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/order_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Order" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
