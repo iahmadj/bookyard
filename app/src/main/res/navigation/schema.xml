@@ -7,12 +7,12 @@
 
     <activity
         android:id="@+id/categoriesActivity"
-        android:name="com.classroom.app1.UI.HomeActivity"
+        android:name="com.classroom.bookyard.UI.HomeActivity"
         android:label="activity_categories"
         tools:layout="@layout/activity_categories" />
     <activity
         android:id="@+id/productActivity"
-        android:name="com.classroom.app1.products.ProductActivity"
+        android:name="com.classroom.bookyard.products.ProductActivity"
         android:label="ProductActivity"
         />
 

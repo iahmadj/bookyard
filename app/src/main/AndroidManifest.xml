@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.classroom.app1">
+    package="com.classroom.bookyard">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,26 +15,26 @@
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".UI.Seller.SellerHome"
+            android:name="com.classroom.bookyard.UI.Seller.SellerHome"
             android:label="@string/title_activity_seller_home"
             android:theme="@style/AppTheme">
 
         </activity>
 
-        <activity android:name=".UI.Seller.SellersOrders">
+        <activity android:name="com.classroom.bookyard.UI.Seller.SellersOrders">
 
         </activity>
-        <activity android:name=".UI.Seller.AddProduct" />
-        <activity android:name=".orders.UsersOrders" />
-        <activity android:name=".cart.CartActivity" />
-        <activity android:name=".UI.Register" />
-        <activity android:name=".Helpers.BaseActivity" />
-        <activity android:name=".search" />
-        <activity android:name=".Favorite" />
-        <activity android:name=".profil.EditProfile" />
-        <activity android:name=".UI.Seller.EditProduct" />
+        <activity android:name="com.classroom.bookyard.UI.Seller.AddProduct" />
+        <activity android:name="com.classroom.bookyard.orders.UsersOrders" />
+        <activity android:name="com.classroom.bookyard.cart.CartActivity" />
+        <activity android:name="com.classroom.bookyard.UI.Register" />
+        <activity android:name="com.classroom.bookyard.Helpers.BaseActivity" />
+        <activity android:name="com.classroom.bookyard.search" />
+        <activity android:name="com.classroom.bookyard.Favorite" />
+        <activity android:name="com.classroom.bookyard.profil.EditProfile" />
+        <activity android:name="com.classroom.bookyard.UI.Seller.EditProduct" />
 
-        <activity android:name=".login.Login" >
+        <activity android:name="com.classroom.bookyard.login.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,17 +42,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".products.ProductActivity"
+            android:name="com.classroom.bookyard.products.ProductActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".profil.ProfilActivity"
+            android:name="com.classroom.bookyard.profil.ProfilActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".products.ProductsListActivity"
+            android:name="com.classroom.bookyard.products.ProductsListActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name=".UI.HomeActivity"
+            android:name="com.classroom.bookyard.UI.HomeActivity"
             android:theme="@style/AppTheme" />
 
         <meta-data
