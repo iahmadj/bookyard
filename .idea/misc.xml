@@ -125,6 +125,23 @@
         <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/bottom_navigation_home.xml" value="0.209375" />
         <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/menu_main.xml" value="0.209375" />
         <entry key="..\:/Users/Aj/Downloads/Compressed/EcommerceCosmetica-master/EcommerceCosmetica-master/app/src/main/res/menu/seller_home.xml" value="0.209375" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/activity_splash.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/login.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/nav_header_seller_home.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/product_card_list.xml" value="0.264" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/product_card_list_cart.xml" value="0.4" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/product_card_orders.xml" value="0.4" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/product_card_usersorders.xml" value="0.4" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/product_vendor_list.xml" value="0.2" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/produit_card.xml" value="0.115625" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/produit_userorders.xml" value="0.4" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/rate_us_dialog.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/register.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/seller_product_orders.xml" value="0.4" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/single_view.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/spinner_item.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/shahz/Desktop/workspace/bookyard/app/src/main/res/layout/toolbar.xml" value="0.23645833333333333" />
       </map>
     </option>
   </component>

@@ -3,19 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="16dp"
     android:fitsSystemWindows="true"
-    app:cardElevation="5dp"
+    app:cardElevation="15dp"
+android:elevation="15dp"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="6dp">
+    app:cardCornerRadius="24dp">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="16dp"
         android:layout_marginBottom="10dp"
-
         android:orientation="horizontal">
 
         <LinearLayout

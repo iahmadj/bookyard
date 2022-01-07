@@ -5,9 +5,12 @@
     android:layout_height="wrap_content"
     android:layout_margin="20dp"
     android:elevation="0dp"
-    app:cardCornerRadius="10dp"
     android:clickable="true"
-    app:cardElevation="4dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:padding="11dp"
+    app:cardCornerRadius="13dp"
+    app:cardElevation="24dp"
+
     android:focusable="true">
 
     <RelativeLayout
@@ -19,14 +22,15 @@
             android:id="@+id/cardview_product_img_cart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="0dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="2dp">
+            android:layout_margin="12dp"
+            android:elevation="13dp"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="13dp">
 
             <androidx.constraintlayout.utils.widget.ImageFilterView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
+                android:padding="12dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/book_sample" />
 

@@ -5,11 +5,12 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:clickable="true"
-    android:elevation="0dp"
+    android:elevation="15dp"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackgroundBorderless"
     android:padding="11dp"
-    app:cardElevation="5dp">
+    app:cardCornerRadius="13dp"
+    app:cardElevation="24dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,13 +21,14 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="0dp"
-            app:cardElevation="4dp">
+            app:cardCornerRadius="13dp"
+            app:cardElevation="13dp">
 
             <androidx.constraintlayout.utils.widget.ImageFilterView
                 android:id="@+id/product_img"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
+                android:padding="12dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/book_sample" />
 
@@ -39,7 +41,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/lato_black"
-            android:maxLines="@integer/material_motion_duration_medium_1"
+            android:maxLines="2"
             android:text="@string/product_title"
             android:textSize="18sp"
 

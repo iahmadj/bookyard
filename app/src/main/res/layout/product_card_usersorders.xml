@@ -3,67 +3,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="0dp"
-    android:padding="11dp"
-    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:layout_margin="20dp"
     android:clickable="true"
-    app:cardBackgroundColor="#00FFFFFF"
-    app:cardElevation="5dp"
-    app:cardCornerRadius="10dp"
-    android:layout_margin="12dp"
-    android:focusable="true">
+    android:elevation="13dp"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="24dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
+
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_product_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="10dp">
+            android:layout_margin="12dp"
+            android:elevation="13dp"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="13dp">
 
             <ImageView
-                android:id="@+id/product_img"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/book_sample" />
+                android:padding="12dp"
+                android:src="@drawable/book_sample"
+                android:scaleType="fitCenter" />
 
         </androidx.cardview.widget.CardView>
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/product_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical">
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toRightOf="@+id/cardview_product_img"
+            android:fontFamily="@font/raleway_bold"
+            android:maxLines="1"
+            android:text="@string/product_title"
+            android:textSize="20sp" />
 
-            <TextView
-                android:textSize="20sp"
-                android:id="@+id/product_title"
-                android:layout_marginTop="12dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="12dp"
-                android:maxLines="1"
-                android:fontFamily="@font/raleway_bold"
-                android:text="@string/product_title" />
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_title"
+            android:layout_marginEnd="12dp"
+            android:layout_toRightOf="@+id/cardview_product_img"
+            android:fontFamily="@font/lato_black"
+            android:text="11.99$"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/product_price"
-                android:fontFamily="@font/raleway"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="11.99$"
-                android:textColor="@color/design_default_color_error"
-                android:textSize="16sp"
-               />
 
-        </LinearLayout>
-    </LinearLayout>
-
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
