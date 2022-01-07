@@ -55,8 +55,7 @@
             android:layout_width="91dp"
             android:layout_height="88dp"
             android:layout_marginLeft="38dp"
-            android:layout_marginTop="85dp"
-            android:background="@drawable/circle_border">
+            android:layout_marginTop="85dp">
 
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -65,7 +64,6 @@
                 android:layout_height="96dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_add" />
-
 
         </RelativeLayout>
 

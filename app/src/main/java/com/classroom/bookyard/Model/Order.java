@@ -4,20 +4,27 @@ import java.util.ArrayList;
 
 public class Order {
     private String id_order;
+    //private String Address;
     private ArrayList<Product> products;
     private String id_user;
     private Long state;
+
 
     public Order(String id_order, ArrayList<Product> products, String id_user, Long state) {
         this.id_order = id_order;
         this.products = products;
         this.id_user = id_user;
+        //this.Address = Address;
         this.state = state;
     }
 
     public String getId_order() {
         return id_order;
     }
+
+//    public String getAddress() {
+//        return Address;
+//    }
 
     public void setId_order(String id_order) {
         this.id_order = id_order;

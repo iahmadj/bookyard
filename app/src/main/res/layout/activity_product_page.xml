@@ -125,7 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:fontFamily="@font/raleway_regular"
+                android:fontFamily="sans-serif-medium"
                 android:text="Rs: 120"
                 android:textColor="@color/design_default_color_error"
                 android:textSize="22sp" />

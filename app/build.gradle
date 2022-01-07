@@ -34,7 +34,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     //fancy buttons
     implementation 'com.github.medyo:fancybuttons:1.9.0'
-    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
     //Silder
     implementation 'com.github.smarteist:autoimageslider:1.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'

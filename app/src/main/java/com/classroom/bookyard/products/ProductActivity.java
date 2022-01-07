@@ -44,7 +44,7 @@ public class ProductActivity extends AppCompatActivity {
     Double priceItem;
     TextView title_item, price_item, description_item;
     CircleImageView profile;
-    //private FancyButton buy;
+    //private F ancyButton buy;
     private FloatingActionButton buy,fav_now;
     private TinyDB tinydb, tinydbb;
     private boolean clicked;

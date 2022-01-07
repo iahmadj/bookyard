@@ -21,6 +21,7 @@ import com.classroom.bookyard.Helpers.TinyDB;
 import com.classroom.bookyard.Model.Product;
 import com.classroom.bookyard.R;
 import com.classroom.bookyard.UI.HomeActivity;
+import com.classroom.bookyard.profil.EditProfile;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -35,7 +36,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CartActivity extends AppCompatActivity implements View.OnClickListener {
+public class CartActivity extends AppCompatActivity  {
 
     private CartProductAdapter adapter;
     RecyclerView recyclerView;
@@ -45,10 +46,10 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
     com.google.android.material.button.MaterialButton rate;
     private Dialog myDialog;
     private FirebaseUser user = Singleton.getUser();
-    com.google.android.material.button.MaterialButton delete_all;
+    com.google.android.material.button.MaterialButton delete_all,order_button;
     ImageView back_button_cart;
     String UID = user.getUid();
-    String Address;
+    String Address,temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,8 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
 
         recyclerView = findViewById(R.id.cart_rc);
         delete_all = findViewById(R.id.delete_all);
+        order_button = findViewById(R.id.order_button);
+
         back_button_cart = findViewById(R.id.back_button_cart);
         LinearLayoutManager layoutManager = new LinearLayoutManager(CartActivity.this,
                 LinearLayoutManager.VERTICAL, false);
@@ -65,8 +68,22 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
         fetchRemoteData();
 
 
-
-
+        db.collection("Users").document(UID)
+                .get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document.exists()) {
+                        Address = document.getString("Address");
+                        temp = Address;
+                       // Toast.makeText(CartActivity.this, Address, Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Data not found", Toast.LENGTH_SHORT);
+                }
+            }
+        });
 
 
         delete_all.setOnClickListener(new View.OnClickListener() {
@@ -74,18 +91,58 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
                 tinydb.remove((user.getUid()));
                 Toast.makeText(CartActivity.this, "Cart is Cleared",
                         Toast.LENGTH_SHORT).show();
+
                 startActivity(new Intent(CartActivity.this, HomeActivity.class));
             }
         });
         back_button_cart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                checkadd();
                 Intent intent=new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
+
+
+        order_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                if (temp == null || temp ==  " " || temp == "")
+                {
+                    Toast.makeText(getApplicationContext(), "Please Enter your Address Before Checkout", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(CartActivity.this, EditProfile.class));
+                }
+                else {
+                    myDialog = new Dialog(CartActivity.this);
+                    myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    assert myDialog.getWindow() != null;
+                    myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    myDialog.setCancelable(false);
+                    myDialog.setContentView(R.layout.rate_us_dialog);
+                    rate = myDialog.findViewById(R.id.rateButton);
+                    myDialog.show();
+
+                    myDialog.findViewById(R.id.close_rate_dialog).setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            myDialog.dismiss();
+                        }
+                    });
+                    rate.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            addOrder();
+                            startActivity(new Intent(CartActivity.this, HomeActivity.class));
+                            myDialog.dismiss();
+                        }
+                    });
+                }
+            }
+        });
+
+
+
     }
 
     private void fetchRemoteData() {
@@ -106,7 +163,6 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
             //favtext.setVisibility(View.GONE);
         }
 
-        findViewById(R.id.order_button).setOnClickListener(this);
         Collections.reverse(listItems);
         onSuccess(listItems);
 
@@ -142,6 +198,7 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
         Map<String, Object> productOrder = new HashMap<>();
         productOrder.put("products", listItems);
         productOrder.put("id_user", user.getUid());
+       // productOrder.put("Address",user.getAddress());
         productOrder.put("status", 0);
 
         db.collection("orders")
@@ -164,67 +221,18 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    public void onClick(View v) {
+//    @Override
+//    public void onClick(View v) {
+//
+//
+//            if (v.getId() == R.id.order_button) {
+//
+//            }
+//            else
+//            {
+//                Toast.makeText(getApplicationContext(), "Data not found", Toast.LENGTH_SHORT);
+//            }
+//        }
 
-
-            if (v.getId() == R.id.order_button) {
-
-//                checkadd();
-//                if (Address == null ) {
-//                    Toast.makeText(getApplicationContext(), "Data not found", Toast.LENGTH_SHORT);
-//                    startActivity(new Intent(CartActivity.this, EditProfile.class));
-//                } else {
-                    myDialog = new Dialog(CartActivity.this);
-                    myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                    assert myDialog.getWindow() != null;
-                    myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                    myDialog.setCancelable(false);
-                    myDialog.setContentView(R.layout.rate_us_dialog);
-                    rate = myDialog.findViewById(R.id.rateButton);
-                    myDialog.show();
-
-                    myDialog.findViewById(R.id.close_rate_dialog).setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            myDialog.dismiss();
-                        }
-                    });
-                    rate.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            addOrder();
-                            startActivity(new Intent(CartActivity.this, HomeActivity.class));
-                            myDialog.dismiss();
-                        }
-                    });
-
-               // }
-            }
-            else
-            {
-                Toast.makeText(getApplicationContext(), "Data not found", Toast.LENGTH_SHORT);
-            }
-        }
-
-    public void checkadd()
-    {
-        db.collection("Users").document(UID)
-                .get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot document = task.getResult();
-                    if (document.exists()) {
-                        Address = document.getString("Address");
-                     //   Toast.makeText(getApplicationContext(), Address, Toast.LENGTH_SHORT).show();
-
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(), "Data not found", Toast.LENGTH_SHORT);
-                }
-            }
-        });
-    }
 
 }
