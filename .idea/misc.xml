@@ -11,12 +11,21 @@
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_product_page.xml" value="0.209375" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_profile.xml" value="0.209375" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_search.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_seller_home.xml" value="0.209375" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_sellersorders.xml" value="0.209375" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/activity_splash.xml" value="0.18" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/cat_cardview.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/fragment_annuler.xml" value="0.25" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/product_card_list.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/product_card_orders.xml" value="0.33" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/product_card_usersorders.xml" value="0.209375" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/produit_card.xml" value="0.209375" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/rate_us_dialog.xml" value="0.209375" />
-        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/seller_product_orders.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/register.xml" value="0.22" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/seller_product_orders.xml" value="0.33" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/single_view.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/spinner_item.xml" value="0.209375" />
+        <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/layout/toolbar.xml" value="0.209375" />
         <entry key="..\:/New folder/TryProject-master/TryProject-master/app/src/main/res/menu/bottom_navigation_home.xml" value="0.209375" />
         <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable-v24/circle_border.xml" value="0.2037037037037037" />
         <entry key="..\:/Users/Aj/AndroidStudioProjects/TryProject/app/src/main/res/drawable/big_cercle.xml" value="0.2037037037037037" />

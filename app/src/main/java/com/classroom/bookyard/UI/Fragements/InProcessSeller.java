@@ -133,6 +133,7 @@ public class InProcessSeller extends Fragment {
                                                 document.getId(),
                                                 productArrayList,
                                                 (String) document.get("id_user"),
+                                                (String) document.get("Address"),
                                                 (Long) document.get("status"));
                                         ordersList.add(order);
                                     }

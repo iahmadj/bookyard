@@ -35,7 +35,7 @@ import java.util.TreeSet;
 
 public class CanceledOrders extends Fragment {
 
-    RecyclerView recyclerView;private static final String TAG = "awach a 3mi";
+    RecyclerView recyclerView;private static final String TAG = "Data";
     private FirebaseFirestore db = Singleton.getDb();
     private SellerOrdersAdapter adapter;
     private ArrayList<Order> ordersList = new ArrayList<>();
@@ -141,6 +141,7 @@ public class CanceledOrders extends Fragment {
                                                 document.getId(),
                                                 productArrayList,
                                                 (String) document.get("id_user"),
+                                                (String) document.get("Address"),
                                                 (Long) document.get("status"));
                                         ordersList.add(order);
                                     }

@@ -4,11 +4,13 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,9 +19,13 @@ import com.classroom.bookyard.Model.Order;
 import com.classroom.bookyard.R;
 import com.classroom.bookyard.UI.ClickListeners.RecyclerViewClickListenerOrder;
 import com.classroom.bookyard.UI.Seller.SellersOrders;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.SetOptions;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +40,7 @@ public class SellerOrdersAdapter extends RecyclerView.Adapter<SellerOrdersAdapte
     private FirebaseFirestore db;
     private RecyclerViewClickListenerOrder mClickListener;
     private Order mProduct;
-    String or,Uid;
+    String or,address;
 
 
     public SellerOrdersAdapter(ArrayList<Order> orders, Context context, RecyclerViewClickListenerOrder mClickListener) {
@@ -69,7 +75,7 @@ public class SellerOrdersAdapter extends RecyclerView.Adapter<SellerOrdersAdapte
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         Order mOrder;
-        TextView ordername, productprice, orderID;
+        TextView ordername, productprice, orderID, caddress;
         RecyclerView rc_products;
         Button check, cancel;
 
@@ -80,6 +86,7 @@ public class SellerOrdersAdapter extends RecyclerView.Adapter<SellerOrdersAdapte
             productprice = itemView.findViewById(R.id.product_price_cart);
             orderID = itemView.findViewById(R.id.id_order);
             rc_products = itemView.findViewById(R.id.rc_products);
+            caddress = itemView.findViewById(R.id.caddress);
 
             //Buttons
             check = itemView.findViewById(R.id.check);
@@ -99,29 +106,11 @@ public class SellerOrdersAdapter extends RecyclerView.Adapter<SellerOrdersAdapte
 
             this.mOrder = order;
             or = mOrder.getId_order();
-            //Toast.makeText(context.getApplicationContext(), or,Toast.LENGTH_SHORT).show();
-
-
-//        db.collection("orders").document(or)
-//                .get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-//            @Override
-//            public void onComplete( Task<DocumentSnapshot> task) {
-//                if (task.isSuccessful()) {
-//                    DocumentSnapshot document = task.getResult();
-//                    if (document.exists()) {
-//                        Uid = document.getString("id_user");
-//                        Toast.makeText(context.getApplicationContext(), Uid,Toast.LENGTH_SHORT).show();
-//                    }
-//                } else {
-//                    Log.d(TAG, "get failed with ", task.getException());
-//                }
-//            }
-//        });
-
 
 
             ArrayList mOrderProducts = mOrder.getProducts();
             ordername.setText(mOrder.getId_order());
+            caddress.setText(mOrder.getAddress());
 
             if (mOrderProducts.size() != 0) {
                 ProductsOrdersAdapter productAdapter = new ProductsOrdersAdapter(mOrderProducts, context);
@@ -152,10 +141,10 @@ public class SellerOrdersAdapter extends RecyclerView.Adapter<SellerOrdersAdapte
 
         @Override
         public void onClick(View view) {
-            mClickListener.onClick(view, mProduct);
-
+            Toast.makeText(context.getApplicationContext(), "Please Dont Click me",Toast.LENGTH_SHORT);
         }
     }
+
 
     public void updateState(int i, String s) {
 
