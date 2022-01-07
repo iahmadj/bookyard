@@ -49,7 +49,7 @@ public class CartActivity extends AppCompatActivity  {
     com.google.android.material.button.MaterialButton delete_all,order_button;
     ImageView back_button_cart;
     String UID = user.getUid();
-    String Address,temp;
+    String Address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +76,6 @@ public class CartActivity extends AppCompatActivity  {
                     DocumentSnapshot document = task.getResult();
                     if (document.exists()) {
                         Address = document.getString("Address");
-                        temp = Address;
                        // Toast.makeText(CartActivity.this, Address, Toast.LENGTH_SHORT).show();
                     }
                 } else {
@@ -108,7 +107,7 @@ public class CartActivity extends AppCompatActivity  {
         order_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (temp == null || temp ==  " " || temp == "")
+                if (Address == null || Address ==  " " || Address == "")
                 {
                     Toast.makeText(getApplicationContext(), "Please Enter your Address Before Checkout", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(CartActivity.this, EditProfile.class));
@@ -198,7 +197,7 @@ public class CartActivity extends AppCompatActivity  {
         Map<String, Object> productOrder = new HashMap<>();
         productOrder.put("products", listItems);
         productOrder.put("id_user", user.getUid());
-       // productOrder.put("Address",user.getAddress());
+        productOrder.put("Address",Address);
         productOrder.put("status", 0);
 
         db.collection("orders")

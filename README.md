@@ -1,6 +1,6 @@
 # EcommerceCosmetica
 
-Cosmetica is an android project based on Firebsase Firestore.  
+Cosmetica is an android project based on Firebase Firestore.  
 After graduating my master degree I wanted to share the application I've made to complete my second year, so other people can use it in a free way.  
 
 ![Screenshot1](screen1.png)
