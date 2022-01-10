@@ -68,7 +68,7 @@ public class ProductsOrdersAdapter extends RecyclerView.Adapter<ProductsOrdersAd
 
             this.mProduct = products;
             productname.setText(mProduct.getfname());
-            productprice.setText("Rs: "+mProduct.getPrice());
+            productprice.setText("Rs. "+mProduct.getPrice());
 
 
             Glide

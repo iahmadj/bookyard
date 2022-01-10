@@ -7,6 +7,10 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.classroom.bookyard.Helpers.BaseActivity;
 import com.classroom.bookyard.R;
 import com.classroom.bookyard.UI.HomeActivity;
@@ -53,7 +57,14 @@ public class Login extends BaseActivity implements View.OnClickListener {
         db = FirebaseFirestore.getInstance();
 
         // [END initialize_auth]
+
     }
+
+    @Override
+    public void onBackPressed() {
+            super.onBackPressed();
+            finishAffinity();
+        }
 
     // [START on_start_check_user]
     @Override

@@ -1,7 +1,6 @@
 package com.classroom.bookyard.UI.ClickListeners;
 
 import android.view.View;
-
 import com.classroom.bookyard.Model.Categories;
 
 

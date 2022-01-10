@@ -12,8 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
-
-
 import com.bumptech.glide.Glide;
 import com.classroom.bookyard.Helpers.BaseActivity;
 import com.classroom.bookyard.Helpers.DataStatusImage;
@@ -36,11 +34,9 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfilActivity extends BaseActivity implements View.OnClickListener {
@@ -105,8 +101,6 @@ public class ProfilActivity extends BaseActivity implements View.OnClickListener
         });
     }
 
-    private void setSupportActionBar(Toolbar toolbar) {
-    }
 
 
     protected void getProfile() {

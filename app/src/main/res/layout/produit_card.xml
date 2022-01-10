@@ -42,14 +42,14 @@
 
             <TextView
                 android:id="@+id/product_title_cart"
-                android:fontFamily="@font/raleway_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="12dp"
+                android:fontFamily="@font/raleway_bold"
                 android:maxLines="1"
-                android:text="@string/product_title" />
+                android:text="@string/product_title"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/product_price_cart"

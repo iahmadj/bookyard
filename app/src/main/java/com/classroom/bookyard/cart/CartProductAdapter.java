@@ -81,9 +81,5 @@ public class CartProductAdapter extends RecyclerView.Adapter<CartProductAdapter.
                     .into(productImg);
         }
 
-        //@Override
-        /*public void onClick(View view) {
-            mClickListener.onClick(view, mProduct);
-        }*/
     }
 }

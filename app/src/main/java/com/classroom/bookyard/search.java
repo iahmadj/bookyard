@@ -48,11 +48,8 @@ public class search extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
         inputSearch = findViewById(R.id.inputSearch);
         back_button_search = findViewById(R.id.back_button_search);
-        com.google.android.material.appbar.MaterialToolbar toolbar = findViewById(R.id.toolbar);
         search = findViewById(R.id.search);
-        // Sets the Toolbar to act as the ActionBar for this Activity window.
-        // Make sure the toolbar exists in the activity and is not null
-        setSupportActionBar(toolbar);
+
 
         recyclerView_products = findViewById(R.id.recycler_view);
         init();

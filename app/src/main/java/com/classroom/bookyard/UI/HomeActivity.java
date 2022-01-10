@@ -61,11 +61,6 @@ public class HomeActivity extends AppCompatActivity {
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     String uid = user.getUid();
-    //String fav = db.collection("Users").document(uid).collection("f_cat").get().toString();
-    //Task<QuerySnapshot> favii = db.collection("Users").document(uid).collection("f_cat").get();
-
-
-
 
 
     private RecyclerView.LayoutManager mLayoutManager;
@@ -76,13 +71,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
-
-
         FirebaseApp.initializeApp(this);
 
         com.google.android.material.appbar.MaterialToolbar toolbar = findViewById(R.id.toolbar);
-        // Sets the Toolbar to act as the ActionBar for this Activity window.
-        // Make sure the toolbar exists in the activity and is not null
         setSupportActionBar(toolbar);
 
         recyclerView = findViewById(R.id.categories_rc);
@@ -163,9 +154,12 @@ public class HomeActivity extends AppCompatActivity {
         fetchData();
         fetchProducts();
 
+    }
 
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
     }
 
     public void setSupportActionBar(Toolbar toolbar) {

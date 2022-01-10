@@ -76,7 +76,6 @@ public class CartActivity extends AppCompatActivity  {
                     DocumentSnapshot document = task.getResult();
                     if (document.exists()) {
                         Address = document.getString("Address");
-                       // Toast.makeText(CartActivity.this, Address, Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(getApplicationContext(), "Data not found", Toast.LENGTH_SHORT);
@@ -219,19 +218,6 @@ public class CartActivity extends AppCompatActivity  {
         });
 
     }
-
-//    @Override
-//    public void onClick(View v) {
-//
-//
-//            if (v.getId() == R.id.order_button) {
-//
-//            }
-//            else
-//            {
-//                Toast.makeText(getApplicationContext(), "Data not found", Toast.LENGTH_SHORT);
-//            }
-//        }
 
 
 }

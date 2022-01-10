@@ -38,7 +38,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class ProductActivity extends AppCompatActivity {
-    private static final String TAG = "wach";
+    private static final String TAG = "Data";
     String fnameItem, descItem, idItem, idSeller, idCat;
     ArrayList imgItem;
     Double priceItem;
@@ -306,11 +306,8 @@ public class ProductActivity extends AppCompatActivity {
         for (int i = 0; i < imgItem.size(); i++) {
 
             DefaultSliderView sliderView = new DefaultSliderView(this);
-
             sliderView.setImageUrl(imgItem.get(i).toString());
-
             sliderView.setImageScaleType(ImageView.ScaleType.FIT_CENTER);
-            //sliderView.setDescription("setDescription " + (i + 1));
             sliderView.setOnSliderClickListener(new SliderView.OnSliderClickListener() {
                 @Override
                 public void onSliderClick(SliderView sliderView) {
@@ -318,15 +315,12 @@ public class ProductActivity extends AppCompatActivity {
                 }
             });
 
-            //at last add this view in your layout :
             sliderLayout.addSliderView(sliderView);
         }
     }
 
 
-    /**
-     * showing bottom sheet dialog
-     */
+
     @OnClick(R.id.btn_bottom_sheet_dialog)
     public void showBottomSheetDialog() {
 
@@ -376,8 +370,6 @@ public class ProductActivity extends AppCompatActivity {
                         if (document.getString("seller").equals("true")) {
                             buy.setVisibility(View.INVISIBLE);
                             fav_now.setVisibility(View.GONE);
-                           // buy.hide();
-                           // fav_now.hide();
                         } else {
                             Log.d(TAG, "Customer will see product page", task.getException());
                             eproduct.setVisibility(View.GONE);

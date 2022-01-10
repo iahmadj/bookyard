@@ -69,6 +69,7 @@ public class SellerHome extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+            finishAffinity();
         }
     }
 

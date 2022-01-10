@@ -2,11 +2,23 @@ package com.classroom.bookyard.profil;
 
 import static com.google.android.gms.common.util.CollectionUtils.mapOf;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.classroom.bookyard.Helpers.BaseActivity;
 import com.classroom.bookyard.Helpers.Singleton;
@@ -21,6 +33,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 
@@ -35,6 +49,8 @@ public class EditProfile extends BaseActivity {
     private com.google.android.material.textfield.TextInputEditText fvrt;
     private com.google.android.material.button.MaterialButton update_profile;
     ImageView back_button_eprofile;
+    LocationManager locationManager;
+    LocationListener locationListener;
 
 
     // [START declare_auth]
@@ -42,6 +58,7 @@ public class EditProfile extends BaseActivity {
     private FirebaseFirestore db = Singleton.getDb();
     private FirebaseUser user = Singleton.getUser();
     String UID = user.getUid();
+    String user_current_address;
     // [END declare_auth]
 
     @Override
@@ -88,6 +105,16 @@ public class EditProfile extends BaseActivity {
         });
 
 
+        locationManager=(LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationListener= new LocationListener() {
+            @Override
+            public void onLocationChanged(@NonNull Location location) {
+                user_current_address=update_location_info(location);
+                Eaddress.setText(user_current_address);
+            }
+        };
+
+
         update_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -111,4 +138,46 @@ public class EditProfile extends BaseActivity {
             }
         });
     }
+
+
+    public void find_user_current_location(View view)
+    {
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},1);
         }
+        else
+        {
+            Toast.makeText(getApplicationContext(),"Getting location wait",Toast.LENGTH_SHORT).show();
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,6000,50,locationListener);
+        }
+
+    }
+
+    private String update_location_info(Location location)
+    {
+        String address="";
+        Geocoder geocoder= new Geocoder(this, Locale.getDefault());
+        try {
+            List<Address> addresses=geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),1);
+            if(addresses!=null && addresses.size()>0)
+            {
+                if(addresses.get(0).getAddressLine(0)!=null)
+                {
+                    address+=addresses.get(0).getAddressLine(0)+"\n";
+                }
+                if(addresses.get(0).getPostalCode()!=null)
+                {
+                    address+="Postal Code: "+addresses.get(0).getPostalCode();
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return address;
+    }
+
+
+}

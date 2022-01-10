@@ -10,7 +10,7 @@ import com.classroom.bookyard.login.Login;
 public class SplashScreen extends Activity {
 
     /** Duration of wait **/
-    private final int SPLASH_DISPLAY_LENGTH = 2000;
+    private final int SPLASH_DISPLAY_LENGTH = 1000;
 
     /** Called when the activity is first created. */
     @Override
